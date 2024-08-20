@@ -1,24 +1,26 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ScriptableObjects.EventBus.Channel;
 using ScriptableObjects.EventBus.EventBus;
 using ScriptableObjects.EventBus.Events;
 using UnityEngine;
 
 public class EventListener : MonoBehaviour
 {
-    [SerializeField] private EvetBus eventBus;
+
+    [SerializeField] private ChannelSO inputChannel;
     
     private void OnEnable()
     {
-        eventBus.Subscribe<KeyboardEvent>("InputChannel", OnKeyboardEvent);
-        eventBus.Subscribe<MouseEvent>("InputChannel", OnMouseEvent);        
+        EventBus.Instance.Subscribe<KeyboardEvent>(inputChannel, OnKeyboardEvent);
+        EventBus.Instance.Subscribe<MouseEvent>(inputChannel, OnMouseEvent);
     }
 
     private void OnDisable()
     {
-        eventBus.Unsubscribe<KeyboardEvent>("InputChannel", OnKeyboardEvent);
-        eventBus.Unsubscribe<MouseEvent>("InputChannel", OnMouseEvent);
+        EventBus.Instance.Unsubscribe<KeyboardEvent>(inputChannel, OnKeyboardEvent);
+        EventBus.Instance.Unsubscribe<MouseEvent>(inputChannel, OnMouseEvent);
     }
 
     private void OnKeyboardEvent(KeyboardEvent eventData)

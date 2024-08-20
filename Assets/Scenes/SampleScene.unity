@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1a06f09da2e39479d0b1d845654098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventBus: {fileID: 11400000, guid: a819d0448d98dd24e9c4c13326f53506, type: 2}
+  inputChannel: {fileID: 11400000, guid: 3b758a9928ee223418eaa56889cd086e, type: 2}
 --- !u!4 &357359464
 Transform:
   m_ObjectHideFlags: 0
@@ -354,6 +354,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1470840562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470840564}
+  - component: {fileID: 1470840563}
+  m_Layer: 0
+  m_Name: EventBus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1470840563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470840562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db278452f594a38b6545e5d17167be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1470840564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470840562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483245007
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,9 +427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7f82fa2cd2828418ce4ec1a36fbd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventBus: {fileID: 11400000, guid: a819d0448d98dd24e9c4c13326f53506, type: 2}
-  keyboardEvent: {fileID: 11400000, guid: dd847a7519fa91543b41006bacbdc232, type: 2}
-  mouseEvent: {fileID: 11400000, guid: c6156859c3c46a64eb7025221e188bb3, type: 2}
+  inputChannel: {fileID: 11400000, guid: 3b758a9928ee223418eaa56889cd086e, type: 2}
+  _keyboardEvent: {fileID: 11400000, guid: dd847a7519fa91543b41006bacbdc232, type: 2}
+  _mouseEvent: {fileID: 11400000, guid: c6156859c3c46a64eb7025221e188bb3, type: 2}
 --- !u!4 &1483245009
 Transform:
   m_ObjectHideFlags: 0

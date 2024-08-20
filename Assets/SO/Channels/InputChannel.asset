@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9db278452f594a38b6545e5d17167be1, type: 3}
-  m_Name: EventBus
+  m_Script: {fileID: 11500000, guid: f2a4950439874a51a59ab18fb80d8a18, type: 3}
+  m_Name: InputChannel
   m_EditorClassIdentifier: 
